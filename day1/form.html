@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" action="done.php">
+      <label for="first name">First Name:</label>
+      <input type="text" id="first name" name="first_name" />
+      <br />
+      <br />
+      <label for="last name">Last Name:</label>
+      <input type="text" id="last name" name="last_name" />
+      <br />
+      <br />
+      <label for="address">Address:</label>
+      <textarea name="address" id="address"></textarea>
+      <br />
+      <br />
+      <label for="country">Country:</label>
+      <select name="country" id="country">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+      <br />
+      <br />
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" id="gender" value="male" />Male
+      <input type="radio" name="gender" id="gender" value="female" />Female
+      <br />
+      <br />
+      <label for="skills">Skills:</label>
+      <br />
+      <input type="checkbox" name="skills[]" id="skills" value="php" />PHP
+      <input
+        type="checkbox"
+        name="skills[]"
+        id="skills"
+        value="javascript"
+      />JavaScript
+      <input type="checkbox" name="skills[]" id="skills" value="python" />Python
+      <br />
+      <br />
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br />
+      <br />
+      <label for="department">Department:</label>
+      <input type="text" name="department" placeholder="OpenSource" />
+      <br />
+      <br />
+      <label for="confirm">abcdef</label>
+      <br />
+      <input type="text" name="confirm" id="confirm" />
+      <label for="confirm">please enter the code above to submit:</label>
+      <br />
+      <br />
+      <button type="submit" id="submit" disabled>Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <script>
+      const confirmInput = document.getElementById("confirm");
+      const button = document.getElementById("submit");
+
+      const code = "abcdef";
+
+      confirmInput.addEventListener("input", function () {
+        if (confirmInput.value === code) {
+          button.disabled = false;
+        } else {
+          button.disabled = true;
+        }
+      });
+    </script>
+  </body>
+</html>
