@@ -1,0 +1,4 @@
+Name: mahamed
+Email: khm40005000@gmail.com
+Password: test123
+Profile Picture: opposites.jpeg

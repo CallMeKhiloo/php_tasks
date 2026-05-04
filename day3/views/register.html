@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form method="post" action="../main.php" enctype="multipart/form-data">
+      <label class="form-label" for="name">Name:</label>
+      <input class="form-control" type="text" id="name" name="name" />
+      <br />
+      <br />
+      <label class="form-label" for="email">Email:</label>
+      <input class="form-control" type="email" id="email" name="email" />
+      <br />
+      <br />
+      <label class="form-label" for="password">Password:</label>
+      <input class="form-control" type="password" id="password" name="password" />
+      <br />
+      <br />
+      <label class="form-label" for="confirm_password">Confirm Password:</label>
+      <input class="form-control" type="password" id="confirm_password" name="confirm_password" />
+      <br />
+      <br />
+        <label class="form-label" for="Room_No">Room No:</label>
+        <select class="form-select" id="Room_No" name="Room_No">
+          <option value="101">Application1</option>
+          <option value="102">Application2</option>
+          <option value="103">Cloud</option>
+        </select>
+      <br />
+      <br />
+        <label class="form-label" for="Ext.">Ext.:</label>
+        <input class="form-control" type="text" id="Ext." name="Ext." />
+      <br>
+      <br>
+      <label for="profile_picture">Profile Picture:</label>
+      <input class="form-control" type="file" id="profile_picture" name="profile_picture"/>
+      <br />
+      <br />
+      <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+      <button class="btn btn-secondary" type="reset">Reset</button>
+    </form>
+    </div>
+  </body>
+</html>
