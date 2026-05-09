@@ -1,4 +1,12 @@
-Name: mahamed
-Email: khm40005000@gmail.com
+Name: mohamed
+Email: test@gmail.com
 Password: test123
 Profile Picture: opposites.jpeg
+Name: xxx
+Email: xxx@gmail.com
+Password: test123
+Profile Picture: mri-test-scan.jpg
+Name: mohamed
+Email: test@gmail.com
+Password: 123
+Profile Picture: english-activity.jpeg
